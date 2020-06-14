@@ -11,204 +11,209 @@ export class UserService {
   isCompletedQuotes: boolean;
   constructor(private router: Router, private http: HttpClient) { }
 
-  users = [
-    {
-      id: 1,
-      personalDetails: {
-        fname: 'John Doe',
-        email: 'johnDoe@xyz.com',
-        dob: '02/08/1986',
-        gender: 'male'
-      },
-      personalQuestions: {
-        isUsCitizen: 'yes',
-        haveSpouse: 'no'
-      }
-    },
-    {
-      id: 2,
-      personalDetails: {
-        fname: 'Leanne Graham',
-        email: 'Sincere@april.biz',
-        dob: '17/01/1990',
-        gender: 'male'
-      },
-      personalQuestions: {
-        isUsCitizen: 'no',
-        haveSpouse: 'no'
-      }
-    }
-  ];
-  totalCalculatedBudget: [
-    {
-      TEXT: 'Monthly income',
-      MIN: 10000,
-      MAX: 100000,
-      STEP: 10000,
-      VALUE: 50000,
-    },
-    {
-      TEXT: 'Monthly expenses',
-      MIN: 10000,
-      MAX: 100000,
-      STEP: 10000,
-      VALUE: 50000,
-    },
-    {
-      TEXT: 'Assets',
-      MIN: 10000,
-      MAX: 100000,
-      STEP: 10000,
-      VALUE: 50000,
-    },
-    {
-      TEXT: 'Liabilities',
-      MIN: 10000,
-      MAX: 100000,
-      STEP: 10000,
-      VALUE: 50000,
-    },
-  ];
+  // users = [
+  //   {
+  //     id: 1,
+  //     personalDetails: {
+  //       fname: 'John Doe',
+  //       email: 'johnDoe@xyz.com',
+  //       dob: '02/08/1986',
+  //       gender: 'male'
+  //     },
+  //     personalQuestions: {
+  //       isUsCitizen: 'yes',
+  //       haveSpouse: 'no'
+  //     }
+  //   },
+  //   {
+  //     id: 2,
+  //     personalDetails: {
+  //       fname: 'Leanne Graham',
+  //       email: 'Sincere@april.biz',
+  //       dob: '17/01/1990',
+  //       gender: 'male'
+  //     },
+  //     personalQuestions: {
+  //       isUsCitizen: 'no',
+  //       haveSpouse: 'no'
+  //     }
+  //   }
+  // ];
+  // totalCalculatedBudget: [
+  //   {
+  //     TEXT: 'Monthly income',
+  //     MIN: 10000,
+  //     MAX: 100000,
+  //     STEP: 10000,
+  //     VALUE: 50000,
+  //   },
+  //   {
+  //     TEXT: 'Monthly expenses',
+  //     MIN: 10000,
+  //     MAX: 100000,
+  //     STEP: 10000,
+  //     VALUE: 50000,
+  //   },
+  //   {
+  //     TEXT: 'Assets',
+  //     MIN: 10000,
+  //     MAX: 100000,
+  //     STEP: 10000,
+  //     VALUE: 50000,
+  //   },
+  //   {
+  //     TEXT: 'Liabilities',
+  //     MIN: 10000,
+  //     MAX: 100000,
+  //     STEP: 10000,
+  //     VALUE: 50000,
+  //   },
+  // ];
 
   quotes = [
     {
       productId: 1,
-      prodImg: './../../../../assets/img/quote-img.svg',
-      quoteHeader: 'Quote Details',
-      quoteDetails: 'This plan includes the best life insurance for anyone who needs flexible term policies.',
-      custAvgRatings: 4,
-      customerRatings: [
-        {
-          id: 1,
-          name: 'Matt',
-          ratings: 5,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 2,
-          name: 'George',
-          ratings: 3,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 3,
-          name: 'Kelvin',
-          ratings: 3,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        }
+      prodImg: './../../../../assets/img/sunderkandpath.svg',
+      // quoteHeader: 'Quote Details',
+      // quoteDetails: 'This plan includes the best life insurance for anyone who needs flexible term policies.',
 
-      ]
+      // custAvgRatings: 4,
+      // customerRatings: [
+      //   {
+      //     id: 1,
+      //     name: 'Matt',
+      //     ratings: 5,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 2,
+      //     name: 'George',
+      //     ratings: 3,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 3,
+      //     name: 'Kelvin',
+      //     ratings: 3,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   }
+
+      // ]
     },
     {
       productId: 2,
-      prodImg: './../../../../assets/img/quote-img.svg',
-      quoteHeader: 'Quote Details',
-      quoteDetails: 'This plan includes the best life insurance for anyone who needs permanent life insurance policies.',
+      prodImg: './../../../../assets/img/hanumaan_ashtak.svg',
+      // quoteHeader: 'Quote Details',
+      // quoteDetails: 'This plan includes the best life insurance for anyone who needs permanent life insurance policies.',
+    
       custAvgRatings: 3,
-      customerRatings: [
-        {
-          id: 8,
-          name: 'John',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 9,
-          name: 'Victor',
-          ratings: 4,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 10,
-          name: 'Potter',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        }
-      ]
+      // customerRatings: [
+      //   {
+      //     id: 8,
+      //     name: 'John',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 9,
+      //     name: 'Victor',
+      //     ratings: 4,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 10,
+      //     name: 'Potter',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   }
+      // ]
     },
     {
       productId: 3,
-      prodImg: './../../../../assets/img/quote-img.svg',
-      quoteHeader: 'Quote Details',
-      quoteDetails: `This plan includes the best life insurance for anyone who needs flexible term
-       policies with a cash payment at regular intervals.`,
-      custAvgRatings: 3,
-      customerRatings: [
-        {
-          id: 11,
-          name: 'Michael',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 12,
-          name: 'Victor',
-          ratings: 4,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 13,
-          name: 'Potter',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        }
-      ]
+      prodImg: './../../../../assets/img/hanumaan-aarti.svg',
+      // quoteHeader: 'Quote Details',
+      // quoteDetails: `This plan includes the best life insurance for anyone who needs flexible term
+      //  policies with a cash payment at regular intervals.`,
+     
+     
+       custAvgRatings: 3,
+      // customerRatings: [
+      //   {
+      //     id: 11,
+      //     name: 'Michael',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 12,
+      //     name: 'Victor',
+      //     ratings: 4,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 13,
+      //     name: 'Potter',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   }
+      // ]
     },
     {
       productId: 4,
-      prodImg: './../../../../assets/img/quote-img.svg',
-      quoteHeader: 'Quote Details',
-      quoteDetails: 'This plan includes the best life insurance for anyone who needs simple term policies.',
+      prodImg: './../../../../assets/img/hanumaan-sunderkan.svg',
+      // quoteHeader: 'Quote Details',
+      // quoteDetails: 'This plan includes the best life insurance for anyone who needs simple term policies.',
+     
       custAvgRatings: 3,
-      customerRatings: [
-        {
-          id: 14,
-          name: 'Mike',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 15,
-          name: 'Louis',
-          ratings: 4,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        },
-        {
-          id: 16,
-          name: 'Potter',
-          ratings: 2,
-          comment: 'Seriously love this plan!',
-          timestamp: 'Today at 5:42PM'
-        }
-      ]
+      // customerRatings: [
+      //   {
+      //     id: 14,
+      //     name: 'Mike',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 15,
+      //     name: 'Louis',
+      //     ratings: 4,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   },
+      //   {
+      //     id: 16,
+      //     name: 'Potter',
+      //     ratings: 2,
+      //     comment: 'Seriously love this plan!',
+      //     timestamp: 'Today at 5:42PM'
+      //   }
+      // ]
     },
 
   ];
 
   getUsersList() {
-    return this.users;
+    // return this.users;
   }
 
   getUser(id: number) {
-    return this.users.find(data => data.id === id);
+    // return this.users.find(data => data.id === id);
   }
 
   getCalculatedBudget() {
-    return this.financialBudget;
+    // return this.financialBudget;
   }
 
-  setCalculatedBudget(budgetList) {
+  sgetCalculatedBudget(budgetList) {
     return this.http.get('assets/json/budget/budget.json')
       .pipe(
         map(res => {

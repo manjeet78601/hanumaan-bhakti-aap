@@ -1,17 +1,16 @@
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
 <ion-menu side="start" menuId="beforeLogin" contentId="content" id="unauthenticated">
   <ion-header>
-    <ion-toolbar class="ion-text-center">
-      <img src="./../../../assets/img/lifePlusLogo.png" alt="Life+ Logo">
-    </ion-toolbar>
+    <!-- <ion-toolbar class="ion-text-center">
+      <img src="./../../../assets/img/shree_ram .png"  height="40px"  alt="hanumaan-bhakti Logo">
+    </ion-toolbar> -->
   </ion-header>
   <ion-content class="menu-bar">
     <ng-container *ngFor="let pages of navigateBeforeSignin$ | async; let i = index">
     <ion-list  lines="none" class="menu-list mb-2" [ngClass] = "pages.title === 'Contact' || pages.title === 'Help' || pages.title === 'Sign In'? 'pl-35' : ''">
       <ion-menu-toggle auto-hide="true">
         <ion-item [routerLink]="pages.url" routerDirection="forward" detail-none class="menu-item">
-          <!-- <ion-icon [name]="pages.icon" slot="start"></ion-icon>   -->
-          <span *ngIf="pages.isStep && !pages.isCompleted" class="menu-step">
+      <span *ngIf="pages.isStep && !pages.isCompleted" class="menu-step">
             <strong>
               {{i+1}}
             </strong>
@@ -33,11 +32,13 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="menu-bar">
-    <ng-container  *ngFor="let pages of navigateAfterSignin$ | async; let i = index">
-    <ion-list lines="none" class="menu-list mb-2" [ngClass] = "pages.title== 'My Appointments' || pages.title === 'Contact' || pages.title === 'Help' || pages.title === 'My Profile'? 'pl-35' : ''">
-      <ion-menu-toggle auto-hide="true">
+    <ng-container  *ngFor="let pages of navigateAfterSignin$ | async; let i = index"> -->
+    
+      <ion-list lines="none" class="menu-list mb-2" [ngClass] = "pages.title== 'My Appointments' || pages.title === 'Contact' || pages.title === 'Help' || pages.title === 'My Profile'? 'pl-35' : ''">
+      <ion-menu-toggle auto-hide="true"> 
         <ion-item [routerLink]="pages.url" routerDirection="forward" detail-none class="menu-item">
-          <!-- <ion-icon [name]="pages.icon" slot="start"></ion-icon>   -->
+         
+          <ion-icon [name]="pages.icon" slot="start"></ion-icon>  
           <span *ngIf="pages.isStep && !pages.isCompleted" class="menu-step">
             <strong>
               {{i+1}}
@@ -51,13 +52,13 @@
             <div class="img-container mr-2">
               <img [src]="profileImgIcon" class="profile-img">
             </div>
-          </ng-template>
+          </ng-template> 
           <strong>
             {{pages.title}}
-          </strong>
+          </strong> 
         </ion-item>
       </ion-menu-toggle>
-    </ion-list>
+    </ion-list> 
   </ng-container>
-  </ion-content>
+  </ion-content> 
 </ion-menu>

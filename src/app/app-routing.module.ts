@@ -3,10 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 const routes: Routes = [
-  {
-    path: 'auth',
-    loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
-  },
+  // {
+  //   path: 'auth',
+  //   loadChildren: () => import('./pages/auth/auth.module').then( m => m.AuthPageModule)
+  // },
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
@@ -16,10 +16,10 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'home'
   },
-  {
-    path: 'medical-test',
-    loadChildren: () => import('./pages/medical-test/medical-test.module').then( m => m.MedicalExamPageModule)
-  },
+  // {
+  //   path: 'medical-test',
+  //   loadChildren: () => import('./pages/medical-test/medical-test.module').then( m => m.MedicalExamPageModule)
+  // },
 ];
 
 @NgModule({

@@ -1,0 +1,58 @@
+<!-- Header -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="start" color="dark">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center app-name">
+      <img src="../../../../assets/img/shree_ram .png" width="100px" alt="Hanumaan-Bhakti" (click)="gotoHomePage()">
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- End of header -->
+<!-- Main Section -->
+<ion-content>
+  <section class="content">
+      <div fxLayout="row" fxLayoutAlign="center center">
+          <img src="../../assets/img/bajrang-baan.svg" alt="bajrang-baan" />
+        </div>
+        <div class="pt-4 wrapper ion-text-center" fxLayout="column" fxLayoutAlign="center center">
+    
+    <header  fxLayout="column" fxLayoutAlign="center center">
+      <h1 class="ttile">{{ PAGE_HEADER }}</h1>
+      <p class="title  col-blk">{{ PAGE_SUBHEADER }}</p>
+  
+  </header> 
+    <section fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+     
+      <div class="mt-20 ion-text-center">
+        <button mat-stroked-button class="back-btn mr-5" routerLink="/home/hanumaan-chalisa">BACK</button>
+        <button mat-flat-button color="primary" (click)="calculateBudget()">
+          <!-- (click)="calculateBudget(f)" -->
+          {{ BTN.CALCULATE | uppercase }}
+        </button>
+      </div>
+    </section></div>
+    <!-- End of main section -->
+  </section>
+  <!-- Footer -->
+  <footer class="footer" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="40px">
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        The code Planner<br />
+
+      </ion-label>
+    </ion-text>
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        Copyright Thecodeplanner © 2020
+      </ion-label>
+    </ion-text>
+  </footer>
+  <!-- End of footer -->
+</ion-content>

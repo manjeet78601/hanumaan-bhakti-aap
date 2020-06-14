@@ -3,14 +3,16 @@ import { Observable, from, of } from 'rxjs';
 import { NavigationMenu } from '../models/navigation.model';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { AuthService } from './auth.service';
+// import { AuthService } from './auth.service';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
-  constructor(private http: HttpClient, private auth: AuthService) { }
+  constructor(private http: HttpClient,
+    //  private auth: AuthService
+     ) { }
   navigateBeforeLogin: NavigationMenu[];
   navigateAfterLogin: NavigationMenu[];
   menuURL: string;

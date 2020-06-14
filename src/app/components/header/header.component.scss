@@ -1,9 +1,14 @@
 ion-content.menu-bar {
-    --ion-background-color: #222;
+    // --ion-background-color: red #f08827; #e47f20
+    // --ion-background-color:  ;
+
+    background:rgb(223,211,211);
+    --ion-background-color:inear-gradient(90deg, rgba(223,211,211,1) 99%, rgba(209,12,12,1) 100%);
+  
     opacity: 0.95;
     .menu-item {
         font-size: 18px;
-        color: #fff;
+        color:darkred;
     }
     .menu-list {
         &:first-child {

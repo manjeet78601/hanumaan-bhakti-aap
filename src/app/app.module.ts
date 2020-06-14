@@ -17,7 +17,7 @@ import { Camera } from '@ionic-native/camera/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatComponent } from './components/chat/chat.component';
-import { MintAccountComponent } from './components/mint-account/mint-account.component';
+// import { MintAccountComponent } from './components/mint-account/mint-account.component';
 import { HeadsupAccountComponent } from './components/headsup-account/headsup-account.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
@@ -26,10 +26,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     WelcomeComponent,
     HeaderComponent,
     ChatComponent,
-    MintAccountComponent,
+    // MintAccountComponent,
     HeadsupAccountComponent
   ],
-  entryComponents: [HeaderComponent, ChatComponent, MintAccountComponent, HeadsupAccountComponent],
+  entryComponents: [HeaderComponent, ChatComponent, HeadsupAccountComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),

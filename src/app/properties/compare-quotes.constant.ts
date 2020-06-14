@@ -3,64 +3,137 @@ export class CompareQuotesConstant {
     // Step 4: Health Questions
 
     public static HEALTH_PAGE = {
-        PAGE_HEADER: 'Compare Quotes',
-        PAGE_SUB_HEADER: 'Answer a few health Q’s',
+        PAGE_HEADER: '||श्री हनुमान अष्टक पाठ ||',
+        PAGE_SUB_HEADER: `
+        बाल समय रवि भक्षि लियो, तब तीनहुं लोक भयो अंधियारो।
+
+ताहि सों त्रास भयो जग को, यह संकट काहु सों जात न टारो।।
+
+ 
+
+
+देवन आनि करी विनती तब, छांंिड़ दियो रवि कष्ट निवारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+बालि की त्रास कपीस बसै गिरि, जात महाप्रभु पंथ निहारौ।
+
+चौंकि महामुनि शाप दियो तब, चाहिए कौन विचार विचारो।।
+
+ 
+
+
+कै द्विज रूप लिवाय महाप्रभु, सो तुम दास के शोक निवारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+अंगद के संग लेन गये सिय, खोज कपीस ये बैन उचारो।
+
+जीवत ना बचिहों हमसों, जु बिना सुधि लाये यहां पगुधारो।।
+
+हेरि थके तट सिन्धु सबै तब, लाय सिया, सुधि प्राण उबारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+रावन त्रास दई सिय की, सब राक्षसि सों कहि शोक निवारो।
+
+ताहि समय हनुमान महाप्रभु, जाय महा रजनीचर मारो।।
+
+चाहत सीय अशोक सों आगि, सो दे प्रभु मुद्रिका शोक निवारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+बान लग्यो उर लछिमन के तब, प्रान तजे सुत रावन मारो।
+
+ले गृह वैद्य सुषेन समेत, तबै गिरि द्रोण सुबीर उपारो।।
+
+आन संजीवन हाथ दई तब, लछिमन के तुम प्रान उबारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+रावन युद्ध अजान कियो तब, नाग की फाँस सबै सिर डारौ।
+
+श्री रघुनाथ समेत सबै दल, मोह भयौ यह संकट भारो।।
+
+आनि खगेश तबै हनुमान जी, बन्धन काटि सो त्रास निवारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+बंधु समेत जबै अहिरावन, लै रघुनाथ पताल सिधारो।
+
+देविहिं पूजि भली विधि सों, बलि देहुं सबै मिलि मंत्र विचारो।।
+
+जाय सहाय भयो तब ही, अहिरावन सैन्य समेत संहारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+काज किये बड़ देवन के तुम, वीर महाप्रभु देखि विचारो।
+
+कौन सो संकट मोर गरीब को, जो तुमसौं नहिं जात है टारो।।
+
+बेगि हरो हनुमान महाप्रभु, जो कुछ संकट होय हमारो।
+
+को नहिं जानत है जग में, कपि संकटमोचन नाम तिहारो।।
+
+श्री हनुमान अष्टक दोहा 
+लाल देह लाली लसे, अरु धरि लाल लंगूर।
+वज्र देह दनव दलन, जय जय जय कपि सूर।।`,
         PAGE_LINE: 'In order to provide you with quotes, we need to ask a few questions about your health.',
         HEALTHQUESTIONS: [
-            {
-                TITLE: 'Basic Health',
-                PROGRESS: 25,
-                QUESTIONS: [
-                    {
-                        QUESTIONTEXT: 'Date of Birth',
-                        INPUT_TYPE: 'Datepicker',
-                        ICON: false,
-                        value: '',
-                        tooltip:'Rates go up as you get older, so insurance companies require us to ask this.'
-                    },
-                    {
-                        QUESTIONTEXT: 'Sex',
-                        INPUT_TYPE: 'GENDERBTN',
-                        ICON: true,
-                        value: '',
-                        tooltip:'Go by your sex assigned at birth. Insurance rates vary by sex.'
-                    },
-                    {
-                        QUESTIONTEXT: 'Height',
-                        INPUT_TYPE: 'HEIGHTSLIDER',
-                        HEIGHTVALUE: 1,
-                        HEIGHTUNIT_FT: 'ft',
-                        HEIGHTUNIT_INCH: 'in',
-                        ICON: false,
-                        value: '',
-                        tooltip:'Insurance companies derive your BMI (body-mass index) from your height and weight. BMI is used as a rough estimate of body fat.'
-                    },
-                    {
-                        QUESTIONTEXT: 'Weight',
-                        INPUT_TYPE: 'WEIGHTSLIDER',
-                        WEIGHTVALUE: 1,
-                        WEIGHTUNIT: 'lbs',
-                        ICON: false,
-                        value: '',
-                        tooltip:'Insurance companies derive your BMI (body-mass index) from your height and weight. BMI is used as a rough estimate of body fat.'
-                    },
-                    {
-                        QUESTIONTEXT: 'Have you used any tobacco products in the last 5 years?',
-                        INPUT_TYPE: 'TOGGLEBTN',
-                        ICON: true,
-                        value: '',
-                        tooltip:'Vaping products containing nicotine is a tobacco product. Insurance companies have different rates for tobacco users.'
-                    },
-                    {
-                        QUESTIONTEXT: 'Have you used any marijuana products in the last 5 years?',
-                        INPUT_TYPE: 'TOGGLEBTN',
-                        ICON: true,
-                        value: '',
-                        tooltip:'Most insurance companies will have different rates for marijuana users.'
-                    },
+            // {
+            //     TITLE: 'Basic Health',
+            //     PROGRESS: 25,
+            //     QUESTIONS: [
+            //         {
+            //             QUESTIONTEXT: 'Date of Birth',
+            //             INPUT_TYPE: 'Datepicker',
+            //             ICON: false,
+            //             value: '',
+            //             tooltip:'Rates go up as you get older, so insurance companies require us to ask this.'
+            //         },
+            //         {
+            //             QUESTIONTEXT: 'Sex',
+            //             INPUT_TYPE: 'GENDERBTN',
+            //             ICON: true,
+            //             value: '',
+            //             tooltip:'Go by your sex assigned at birth. Insurance rates vary by sex.'
+            //         },
+            //         {
+            //             QUESTIONTEXT: 'Height',
+            //             INPUT_TYPE: 'HEIGHTSLIDER',
+            //             HEIGHTVALUE: 1,
+            //             HEIGHTUNIT_FT: 'ft',
+            //             HEIGHTUNIT_INCH: 'in',
+            //             ICON: false,
+            //             value: '',
+            //             tooltip:'Insurance companies derive your BMI (body-mass index) from your height and weight. BMI is used as a rough estimate of body fat.'
+            //         },
+            //         {
+            //             QUESTIONTEXT: 'Weight',
+            //             INPUT_TYPE: 'WEIGHTSLIDER',
+            //             WEIGHTVALUE: 1,
+            //             WEIGHTUNIT: 'lbs',
+            //             ICON: false,
+            //             value: '',
+            //             tooltip:'Insurance companies derive your BMI (body-mass index) from your height and weight. BMI is used as a rough estimate of body fat.'
+            //         },
+            //         {
+            //             QUESTIONTEXT: 'Have you used any tobacco products in the last 5 years?',
+            //             INPUT_TYPE: 'TOGGLEBTN',
+            //             ICON: true,
+            //             value: '',
+            //             tooltip:'Vaping products containing nicotine is a tobacco product. Insurance companies have different rates for tobacco users.'
+            //         },
+            //         {
+            //             QUESTIONTEXT: 'Have you used any marijuana products in the last 5 years?',
+            //             INPUT_TYPE: 'TOGGLEBTN',
+            //             ICON: true,
+            //             value: '',
+            //             tooltip:'Most insurance companies will have different rates for marijuana users.'
+            //         },
 
-                ]
-            },
+             //   ]
+           // },
             {
                 TITLE: 'Treatments and Medications',
                 QUESTIONS: [
@@ -199,12 +272,77 @@ export class CompareQuotesConstant {
 
     // Step 4 : Quote
     public static QUOTE = {
-        QUOTE_COMP: 'Quote Comparison Chart',
+        QUOTE_COMP: '|| श्री हनुमान जी की आरती ||',
+        QUOTE_COMP1:`आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की।।
+        जाके बल से गिरिवर कांपे। रोग दोष जाके निकट न झांके।।
+
+        अंजनि पुत्र महाबलदायी। संतान के प्रभु सदा सहाई।
+        दे बीरा रघुनाथ पठाए। लंका जारी सिया सुध लाए।
+
+        लंका सो कोट समुद्र सी खाई। जात पवनसुत बार न लाई।
+        लंका जारी असुर संहारे। सियारामजी के काज संवारे।
+
+
+        लक्ष्मण मूर्छित पड़े सकारे। आणि संजीवन प्राण उबारे।
+        पैठी पताल तोरि जमकारे। अहिरावण की भुजा उखाड़े।
+
+        बाएं भुजा असुर दल मारे। दाहिने भुजा संतजन तारे।
+        सुर-नर-मुनि जन आरती उतारे। जै जै जै हनुमान उचारे।
+        कंचन थार कपूर लौ छाई। आरती करत अंजना माई।
+        लंकविध्वंस कीन्ह रघुराई। तुलसीदास प्रभु कीरति गाई।
+
+        जो हनुमानजी की आरती गावै। बसी बैकुंठ परमपद पावै।
+        आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की।`,
         QUOTE_HEADER: 'Quote Results',
         QUOTE_SUB_HEADER: 'The actual cost for you may be different after your application is processed.',
         CUST_HEADER: 'Customer Rating'
     };
     public static BTTN = {
+        READ_MORE: 'Read More',
+        NEXT: 'NEXT',
+        CLOSE: 'Close',
+        GET_QUOTE: 'GET QUOTE',
+        BACK: 'BACK',
+        FINISH: 'FINISH',
+        DOC: 'Resend documentation',
+        SUBMIT: 'SUBMIT',
+    };
+
+    public static QUOTE1 = {
+        QUOTE_COMP1: '|| श्री रामायणजी की आरती ||',
+        QUOTE_COMP12:`आरती श्री रामायण जी की ।
+        कीरति कलित ललित सिय पी की ॥
+        
+        गावत ब्रहमादिक मुनि नारद ।
+        बाल्मीकि बिग्यान बिसारद ॥
+        शुक सनकादिक शेष अरु शारद ।
+        बरनि पवनसुत कीरति नीकी ॥
+        ॥ आरती श्री रामायण जी की..॥
+        
+        गावत बेद पुरान अष्टदस ।
+        छओं शास्त्र सब ग्रंथन को रस ॥
+        मुनि जन धन संतान को सरबस ।
+        सार अंश सम्मत सब ही की ॥
+        ॥ आरती श्री रामायण जी की..॥
+        
+        गावत संतत शंभु भवानी ।
+        अरु घटसंभव मुनि बिग्यानी ॥
+        ब्यास आदि कबिबर्ज बखानी ।
+        कागभुशुंडि गरुड़ के ही की ॥
+        ॥ आरती श्री रामायण जी की..॥
+        
+        कलिमल हरनि बिषय रस फीकी ।
+        सुभग सिंगार मुक्ति जुबती की ॥
+        दलनि रोग भव मूरि अमी की ।
+        तात मातु सब बिधि तुलसी की ॥
+        
+        आरती श्री रामायण जी की ।
+        कीरति कलित ललित सिय पी की ॥`,
+        QUOTE_HEADER: 'Quote Results',
+        QUOTE_SUB_HEADER: 'The actual cost for you may be different after your application is processed.',
+        CUST_HEADER: 'Customer Rating'
+    };
+    public static BTTN112 = {
         READ_MORE: 'Read More',
         NEXT: 'NEXT',
         CLOSE: 'Close',

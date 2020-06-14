@@ -1,34 +1,38 @@
 [
     {
-        "title": "Insurance 101",
-        "url": "home/chooseplan",
+        "title": "Hanumaan-chalisa",
+        "url": "/home/hanumaan-chalisa",
         "isStep": true,
         "isCompleted": false
     },
     {
-        "title": "Life Insurance Calculator",
-        "url": "/home/insurance-calculator",
+        "title": "Shree Bajrang-Baan",
+        "url": "/home/bajrang-baan",
         "isStep": true,
         "isCompleted": false
     },
     {
-        "title": "Budget Calculator",
-        "url": "/home/budget",
+        "title": "Shree Sunderkand",
+        "url": "/home/sunderkand",
         "isStep": true,
         "isCompleted": false
     },
     {
-        "title": "Compare Quotes",
-        "url": "home/health",
+        "title": "Shree Hanumaan-Ashtak",
+        "url": "home/hanumaan-ashtak",
         "isStep": true,
         "isCompleted": false
     },
     {
-        "title": "Contact",
-        "url": "home/contact"
+        "title": "Hanumaan-Arti",
+        "url": "home/hanumaan-arti",
+        "isStep": true,
+        "isCompleted": false
     },
     {
-        "title": "Sign In",
-        "url": "/auth"
+        "title": "Ramayan-Arti",
+        "url": "home/ramayan-arti",
+        "isStep":true,
+        "isCompleted": false
     }
 ]

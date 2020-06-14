@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" color='dark'>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="start" color="dark">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center app-name">
+      <img src="../../../../assets/img/shree_ram .png" width="100px" alt="Hanumaan-Bhakti" (click)="gotoHomePage()">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section class="content">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <img src="../../assets/img/shree-ram-arti.svg" alt="hanumaan-chalisa" />
+    </div>
+ 
+
+<section class="wrapper ion-text-center"> 
+    
+    <p class="mt-50 header-content">{{DOM_CONSTANTS.QUOTE_COMP1}}</p>
+    <p class="mt-50 header-title">{{DOM_CONSTANTS.QUOTE_COMP12}}</p>
+</section>
+  <!--Footer-->
+  <footer class="footer" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="40px">
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        The code Planner<br /> 
+      </ion-label>
+    </ion-text>
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        Copyright Thecodeplanner 2020
+      </ion-label>
+    </ion-text>
+  </footer>
+</section>
+</ion-content>

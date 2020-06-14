@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" color='dark'>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="start" color="dark">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center app-name">
+   <img src="../../../../assets/img/shree_ram .png" width="100px" alt="Hanumaan-Bhakti" (click)="gotoHomePage()">
+ </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--Header Section-->
+<ion-content>
+  <section class="content">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <img src="../../assets/img/hanumaan-darshan.svg" alt="hanumaan-chalisa" />
+    </div>
+    <div class="pt-4 wrapper ion-text-center" fxLayout="column" fxLayoutAlign="center center">
+      <header>
+        <p class="title">{{PAGE_SUBTITLE}}</p>
+        <p class="subtitle">{{ PAGE_HEADER }}</p>
+      </header>
+      <div>
+        <p class="hanumaan-title">{{PAGE_SUB_HEADER }}</p>
+      </div>
+     <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="mt-20">
+        <button mat-stroked-button  class="mt-bt"
+          routerLink="/home">{{BTTN1.BACK| uppercase}}</button>
+        <button mat-flat-button color="danger" class="mt-up"(click)="hanumaanbttn()">{{BTTN1.INSURANCE | uppercase}}</button>
+      </div> 
+     </div>
+  </section>
+  <footer class="footer" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="40px">
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        The Code Planner<br />
+      </ion-label>
+    </ion-text>
+    <ion-text class="align-item-bottom">
+      <ion-label class="fl-footer-content">
+        Copyright Thecodeplanner © 2020
+      </ion-label>
+    </ion-text>
+  </footer>
+</ion-content>
+<!-- Footer -->
